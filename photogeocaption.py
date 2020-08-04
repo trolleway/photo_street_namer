@@ -23,6 +23,8 @@ class Photogeocaption(QtWidgets.QMainWindow, mainform.Ui_MainWindow):
         self.pushButton_5.clicked.connect(self.process_choise_5)
         self.pushButton_6.clicked.connect(self.process_choise_6)
 
+        self.pushButton_7.clicked.connect(self.go_next_image)
+
         self.processor = photo_geo_processor.Photo_geo_processor()
         self.__current_image_key = 0
         self.images_count = 0
